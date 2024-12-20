@@ -8,15 +8,15 @@
 
 # If submitting to a different project to your default, uncomment line below
 # and replace PROJECT_CODE with appropriate code. This may require setting shortpath
-# project: PROJECT_CODE
+project: vn19
 
 # Force payu to always find, and save, files in this scratch project directory
-# shortpath: /scratch/PROJECT_CODE
+shortpath: /scratch/vn19
 
 # Note: if laboratory is relative path, it is relative to shortpath/$USER
 laboratory: access-esm
 
-jobname: pre-industrial
+jobname: esm_full
 queue: normal
 walltime: 2:30:00
 jobfs: 1500MB
