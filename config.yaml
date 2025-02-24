@@ -16,7 +16,7 @@
 # Note: if laboratory is relative path, it is relative to shortpath/$USER
 laboratory: access-esm
 
-jobname: pre-industrial
+jobname: base-70b173e
 queue: normal
 walltime: 2:30:00
 jobfs: 1500MB
@@ -26,7 +26,7 @@ modules:
   use:
       - /g/data/vk83/prerelease/modules
   load:
-      - access-esm1p6/pr27-5
+      - access-esm1p6/pr43-7
 
 # Model configuration
 model: access-esm1.6
@@ -141,7 +141,7 @@ restart_freq: 10YS
 runlog: true
 manifest:
   reproduce:
-    exe: true
+    exe: false
 
 
 stacksize: unlimited
@@ -159,5 +159,7 @@ sync:
 #  manually run `payu sync` from the command line.
 
 # userscripts:
+userscripts:
+    setup: bash ./override_astart.sh
 
 postscript: -v PAYU_CURRENT_OUTPUT_DIR,PROJECT  -lstorage=${PBS_NCI_STORAGE} ./scripts/NetCDF-conversion/UM_conversion_job.sh
