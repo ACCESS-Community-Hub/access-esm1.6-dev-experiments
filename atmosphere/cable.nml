@@ -1,4 +1,8 @@
 &cable
+  snmin = 0.11        ! depth at which snow switches to 3-layer
+
+  cable_user%L_REV_CORR  = .TRUE.  !apply fix to correctly diagnose energy balance in ESM1.6 runs
+                                 !FALSE in ESM!.5 (as didn't exist) 
 !
 !
 !! cable_user flags
@@ -10,7 +14,7 @@
                                             ! use true for atmosphere only runs if
                                             ! want to take snow from start dump
                                             ! default is .false.
-  cable_user%FWSOIL_SWITCH = 'standard' ! Controls root water uptake function
+  cable_user%FWSOIL_SWITCH = 'Haverd2013' ! Controls root water uptake function
                                         ! choices are: 
                                         ! 'standard' - used for ESM1.5
                                         ! 'non-linear extrapolation' 
@@ -33,12 +37,16 @@
                                  ! humidity deficit method
   cable_user%access13roots = .TRUE. ! TRUE uses prescribed froot values
                                     ! FALSE uses 'rootbeta' parameterisation (as ACCESS-CM2)
+  cable_user%SOIL_THERMAL_FIX = .TRUE. ! TRUE used from CM2 onwards
+                                       ! FALSE as ESM1.5 (didn't exist then)
 !!--------------Test Switches--------------
   cable_user%l_new_roughness_soil  = .FALSE.   ! for new soil roughness, E.Kowalczyk Mar14
   cable_user%l_new_runoff_speed    = .FALSE.   ! for new increase in runoff speed, E.Kowalczyk Mar14
   cable_user%l_new_reduce_soilevp  = .FALSE.   ! to reduce soil evaporation, E.Kowalczyk Mar14
 !!-----------------------------------------
 !
+! soilsnow options
+
   redistrb = .FALSE.  ! Turn on/off the hydraulic redistribution
   wiltParam = 0.5     ! only used if hydraulic redistribution .true.
   satuParam = 0.8     ! only used if hydraulic redistribution .true.
