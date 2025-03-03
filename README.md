@@ -43,8 +43,8 @@ If an experiment is updated (e.g if it's run for more time) after it has been pu
 1. Check which branch name was previously used when pushing to `esm1p6_dev_archive`
     ```
     git branch -a
-    * <current-branch-name>
-    remotes/esm1p6_dev_archive/<remote-branch-name>
+    > * <current-branch-name>
+    > remotes/esm1p6_dev_archive/<remote-branch-name>
     ```
 2. Push to the previously used remote branch:
     ```
