@@ -7,10 +7,10 @@ Each branch in this repository will correspond to a separate experiment.
 ### Branch name conventions
 Branches in this repository use the following naming convention:
 ```
-<user-name>-<dev/test>-<YYYYMMDD>-<counter>
+<GH-user-name>-<dev/test>-<YYYYMMDD>-<counter>
 ```
 where:
-- `<user-name>` is the name of the person running the experiment
+- `<GH-user-name>` is the GitHub user name of the person running the experiment
 - `<dev/test>` is the type of experiment, where:
     - `dev` refers to experiments which are anticipated to make their way into the final model, e.g. spin-up simulations
     - `test` refers experiments used for testing different features or model changes, e.g. a parameter perturbation experiment
