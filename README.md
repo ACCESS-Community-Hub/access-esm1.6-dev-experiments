@@ -17,7 +17,7 @@ where:
 - `<YYYYMMDD>` is the date that the experiment started running.
 - `<number>` is used to distinguish experiments run on the same date.
 
-For example, `martin-test-20250305-3` would refer to the third "test" experiment run by Martin on 2025/03/05.
+For example, `MartinDix-test-20250305-3` would refer to the third "test" experiment run by Martin on 2025/03/05.
 
 ### Pushing an experiment to this repository
 The steps below can be followed to push an experiment to this repository. Note that github ssh keys will need to have previously been set up
