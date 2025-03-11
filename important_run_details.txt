@@ -1,0 +1,23 @@
+All restart backups were done to mark those years where the atmosphere restart needed perturbing.
+
+All perturbations were done using the following script
+/g/data/access/projects/access/apps/pythonlib/umfile_utils/access_cm2/perturbIC.py -s <seed> restart_dump.astart
+
+Where <seed> was equal to 42.
+
+
+Those restarts where we used a different number were:
+ - restart212 --> 41
+
+
+At restart 222, we updated the executable to the pr31-1 release, and also updated the values of the ocean biogeochemical parameters.
+
+At restart 272, we updated the executable to pr31-3 release, which adds material lost via burial back to the surface ocean, maintaining long-term balance in the tracers.
+
+At restart 352, we replaced the ALK, DIC, NO3 and O2 tracers with their values from depth indicies 15:50 with those of the restart file in /g/data/vk83/prerelease/configurations/inputs/access-esm1p6/modern/pre-industrial/restart/2024.12.10/ocean
+
+At restart 653, we replaced the Fe tracer with values from depth indicies 15:50 with those of the restart file in /g/data/vk83/prerelease/configurations/inputs/access-esm1p6/modern/pre-industrial/restart/2024.12.10/ocean
+
+At restart 666, we increased the scavenging of iron onto particles by an order of magnitude from kscav_dfe = 0.0001 to kscav_dfe = 0.001
+
+At restart 678, we increased the remineralisation rate coefficient (detrem) from 0.4 to 0.5 to maintain more organics in the upper ocean, elevate productivity, but also reduce deoxygenation in the deep.
