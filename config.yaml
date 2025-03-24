@@ -16,10 +16,13 @@
 # Note: if laboratory is relative path, it is relative to shortpath/$USER
 laboratory: access-esm
 
-jobname: pre-industrial
+jobname: piC-solar
 queue: normalsr
 walltime: 2:30:00
 jobfs: 1500MB
+storage:
+      gdata:
+            - p66
 
 platform:
   nodesize: 104
@@ -28,9 +31,9 @@ platform:
 # Modules for loading model executables
 modules:
   use:
-      - /g/data/vk83/prerelease/modules
+  - /g/data/vk83/prerelease/modules
   load:
-      - access-esm1p6/pr43-17
+  - access-esm1p6/pr43-17
 
 # Model configuration
 model: access-esm1.6
@@ -117,9 +120,13 @@ submodels:
 
 # Collation
 collate:
-    enable: false
+  exe: mppnccombine.spack
+  restart: true
+  mem: 4GB
+  walltime: 1:30:00
+  mpi: false
 
-restart: /g/data/vk83/prerelease/configurations/inputs/access-esm1p6/modern/pre-industrial/restart/2025.02.17
+restart: /g/data/p66/jxs599/ESM16/PAYU/MergedRestarts2
 
 # Timing controls
 calendar:
