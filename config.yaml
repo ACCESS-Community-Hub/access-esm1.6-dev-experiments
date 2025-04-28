@@ -25,6 +25,12 @@ platform:
   nodesize: 104
   nodemem: 512
 
+modules:
+  use:
+    - /g/data/vk83/modules
+  load:
+    - payu/1.1.3
+
 # Modules for loading model executables
 modules:
   use:
