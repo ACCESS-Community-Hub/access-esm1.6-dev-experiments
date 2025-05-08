@@ -6,7 +6,7 @@
 #PBS -l walltime=00:40:00
 #PBS -l wd
 
-module use /g/data/vk83/modules
+module use /g/data/vk83/prerelease/modules
 module load payu
 
 # Command below calls https://github.com/ACCESS-NRI/um2nc-standalone/blob/main/umpost/conversion_driver_esm1p5.py
