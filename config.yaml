@@ -153,7 +153,7 @@ qsub_flags: -W umask=027
 # longer term storage
 sync:
     enable: True # set path below and change to true
-    path: /g/data/tm70/as2285/esm1.6+cice5 # Set to location on /g/data or a remote server and path (rsync syntax)
+    path: /g/data/tm70/as2285/esm1.6+cice5+apr # Set to location on /g/data or a remote server and path (rsync syntax)
 
 # If a postscript included (such as the automated netcdf conversion), the latest output and restart files will not
 # be automatically synced at the end of a run. To sync the latest output after a postscript has completed,
