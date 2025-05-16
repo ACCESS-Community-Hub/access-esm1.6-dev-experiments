@@ -17,20 +17,16 @@
 laboratory: access-esm
 
 jobname: pre-industrial
-queue: normalsr
-walltime: 2:30:00
+queue: normal
+walltime: 5:00:00
 jobfs: 1500MB
-
-platform:
-  nodesize: 104
-  nodemem: 512
 
 # Modules for loading model executables
 modules:
   use:
-      - /g/data/vk83/modules
+      - /g/data/vk83/prerelease/modules
   load:
-      - access-esm1p6/dev_2025.04.000
+      - access-esm1p6/pr70-4
 
 # Model configuration
 model: access-esm1.6
@@ -38,7 +34,7 @@ model: access-esm1.6
 submodels:
     - name: atmosphere
       model: um
-      ncpus: 208
+      ncpus: 192
       exe: um_hg3.exe
       input:
         # Aerosols
@@ -71,7 +67,7 @@ submodels:
 
     - name: ocean
       model: mom
-      ncpus: 196
+      ncpus: 180
       exe: fms_ACCESS-ESM.x
       input:
         # Biogeochemistry
@@ -86,17 +82,17 @@ submodels:
         - /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/ocean/grids/mosaic/global.1deg/2020.05.19/grid_spec.nc
 
     - name: ice
-      model: cice
+      model: cice5
       ncpus: 12
-      exe: cice_access_360x300_12x1_12p.exe
+      exe: /g/data/tm70/as2285/spack/esm1.6/restricted/ukmo/release/linux-rocky8-x86_64_v4/intel-19.0.3.199/cice5-git.24-set-up-cice5-for-esm156_access-esm1.6-vlq2ut665olk2f4mq64vccgnmxwqtnag/bin/cice_access-esm1.6_360x300_12x1_12p.exe
       input:
         # Grids
         - /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/ice/grids/global.1deg/2020.05.19/kmt.nc
         - /g/data/vk83/prerelease/configurations/inputs/access-esm1p6/share/ice/grids/global.1deg/2024.11.01/grid.nc
         # Iceberg flux
-        - /g/data/vk83/prerelease/configurations/inputs/access-esm1p6/modern/share/ice/iceberg/global.1deg/2024.11.08/lice_discharge_iceberg.nc
+        - /g/data/vk83/prerelease/configurations/inputs/access-esm1p6/modern/share/ice/iceberg/global.1deg/2025.04.01/lice_discharge_masks_iceberg.nc #this is the same as /g/data/vk83/prerelease/configurations/inputs/access-esm1p6/modern/share/ice/iceberg/global.1deg/2024.11.08/lice_discharge_iceberg.nc 
         # Climatology
-        - /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/ice/climatology/global.1deg/2020.05.19/monthly_sstsss.nc
+        # - /g/data/vk83/configurations/inputs/access-esm1p5/modern/share/ice/climatology/global.1deg/2020.05.19/monthly_sstsss.nc
 
     - name: coupler
       model: oasis
@@ -119,7 +115,7 @@ submodels:
 collate:
     enable: false
 
-restart: /g/data/vk83/prerelease/configurations/inputs/access-esm1p6/modern/pre-industrial/restart/2025.04.08 
+restart: /g/data/tm70/as2285/payu/esm1.6-preind+c-cice5+om2_ic/2025.04.01
 
 # Timing controls
 calendar:
@@ -135,13 +131,13 @@ calendar:
 
 runspersub: 1
 
-# Misc
-restart_freq: 10YS
 
 runlog: true
+metadata:
+  enable: true
 manifest:
   reproduce:
-    exe: true
+    exe: false
 
 
 stacksize: unlimited
@@ -151,8 +147,8 @@ qsub_flags: -W umask=027
 # Sync options for automatically copying data from ephemeral scratch space to
 # longer term storage
 sync:
-    enable: False # set path below and change to true
-    path: null # Set to location on /g/data or a remote server and path (rsync syntax)
+    enable: True # set path below and change to true
+    path: /g/data/tm70/as2285/esm1.6+cice5 # Set to location on /g/data or a remote server and path (rsync syntax)
 
 # If a postscript included (such as the automated netcdf conversion), the latest output and restart files will not
 # be automatically synced at the end of a run. To sync the latest output after a postscript has completed,
