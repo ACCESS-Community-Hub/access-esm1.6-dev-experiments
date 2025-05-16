@@ -1,6 +1,34 @@
 format: yamanifest
 version: 1.0
 ---
+work/atmosphere/restart_dump.astart:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/atmosphere/restart_dump.astart
+  hashes:
+    binhash: 4465a2f9e0ed50bdf8da1f185f5784e5
+    md5: bf2f1e1b342f6576fb0624d49f626225
+work/atmosphere/um.res.yaml:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/atmosphere/um.res.yaml
+  hashes:
+    binhash: a5fe7e18b2735a3d0e55a07bcf5448c3
+    md5: 676b3a5ce5d2b7e4bdc78af3359ccb37
+work/coupler/a2i.nc:
+  copy: true
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/coupler/a2i.nc
+  hashes:
+    binhash: ea65566c24d68ddaa3670742634cdb5e
+    md5: 04d66192a4e4a7d32470ec05e7e27744
+work/coupler/i2a.nc:
+  copy: true
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/coupler/i2a.nc
+  hashes:
+    binhash: 84faf53e480eacce9fd3bc7cc7b71e15
+    md5: 78b3976fa6092aa74fd92e5408552e01
+work/coupler/o2i.nc:
+  copy: true
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/coupler/o2i.nc
+  hashes:
+    binhash: 98fad7b70d3386ba420cea56520a4e74
+    md5: 10cf909e27b4b66e183b453fcfa42be9
 work/ice/RESTART/cice_in.nml:
   copy: true
   fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ice/cice_in.nml
@@ -49,3 +77,93 @@ work/ice/RESTART/restart_date.nml:
   hashes:
     binhash: 39b6ee46a1244f80e03a7a3e891ccd27
     md5: a93c5ffdead0e5bf942eb763d615ab5e
+work/ocean/INPUT/ocean_age.res.nc:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_age.res.nc
+  hashes:
+    binhash: 96181aab2efa14c25b56e2ba7ff5263a
+    md5: 482ef218d3f15ccf3643c1a04a584de4
+work/ocean/INPUT/ocean_barotropic.res.nc:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_barotropic.res.nc
+  hashes:
+    binhash: 48d9699dcf5576fcb9586bdfcfbd7a88
+    md5: f61ed1ae2d82f1a1414dae2cb17b1838
+work/ocean/INPUT/ocean_bih_friction.res.nc:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_bih_friction.res.nc
+  hashes:
+    binhash: ab39ecb73cf4eb53c425b565d7bb203b
+    md5: e33ba580f98d9db9c24c7e5551f3d9fd
+work/ocean/INPUT/ocean_density.res.nc:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_density.res.nc
+  hashes:
+    binhash: 4c90e8a3b975c901e42b32a505ed883b
+    md5: 27ac032519fe341567b75208cfb011a0
+work/ocean/INPUT/ocean_frazil.res.nc:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_frazil.res.nc
+  hashes:
+    binhash: 5c68b8c9fbad9cf6f5f577f9684ed323
+    md5: 51e7ca0ab8cf2da34f6e419d1c3a3289
+work/ocean/INPUT/ocean_lap_friction.res.nc:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_lap_friction.res.nc
+  hashes:
+    binhash: 9491962c5faf9d135772c0c8b76272c7
+    md5: be65d8a543fe0788acdb4d648976be15
+work/ocean/INPUT/ocean_neutral.res.nc:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_neutral.res.nc
+  hashes:
+    binhash: fa68d9ad52aa725fa070686242364383
+    md5: 32421deab8267d07bb655b0d32dc67c4
+work/ocean/INPUT/ocean_pot_temp.res.nc:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_pot_temp.res.nc
+  hashes:
+    binhash: e77288684d617df08703bc388c573c42
+    md5: 5d93bae65393f102476ac35ee0670d6d
+work/ocean/INPUT/ocean_sbc.res.nc:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_sbc.res.nc
+  hashes:
+    binhash: dc569bc2252d152fd01a79e9548f088c
+    md5: b91b13d54363a567d7f0f38e6753505f
+work/ocean/INPUT/ocean_sigma_transport.res.nc:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_sigma_transport.res.nc
+  hashes:
+    binhash: 30c68016bfdc7f0c316ed404e112184c
+    md5: e79fdeb47e6d0f7d20847a1ded2b5296
+work/ocean/INPUT/ocean_solo.res:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_solo.res
+  hashes:
+    binhash: 4b11cabba8621c58a4a23e72d8e2e8d1
+    md5: cf7b3600cffe23b5fb6494817c222ad1
+work/ocean/INPUT/ocean_temp_salt.res.nc:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_temp_salt.res.nc
+  hashes:
+    binhash: 1dacd2bcf79e4b29a485c10adc30056b
+    md5: 2ab1106c43f5c815be1e9f140c7fa3d7
+work/ocean/INPUT/ocean_thickness.res.nc:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_thickness.res.nc
+  hashes:
+    binhash: 8f557c63263367f3b698cc80e7be8d07
+    md5: 36fb0ac0b82e042ddc2e17fbcf14d32b
+work/ocean/INPUT/ocean_tracer.res:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_tracer.res
+  hashes:
+    binhash: 9d0085ef4a63fb19d0a6dedb72111b68
+    md5: 95380ce656b2379177c17af9299f30a9
+work/ocean/INPUT/ocean_velocity.res.nc:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_velocity.res.nc
+  hashes:
+    binhash: 6e200e61eceeae88f103a151c5d4ad59
+    md5: f7f02146c4f6b8d95bee103cd70aa42d
+work/ocean/INPUT/ocean_velocity_advection.res.nc:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_velocity_advection.res.nc
+  hashes:
+    binhash: 01aa90989636f284ac8d96a37136c578
+    md5: 0bed094c7754ce71978361bb860642f0
+work/ocean/INPUT/ocean_wombatlite.res.nc:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_wombatlite.res.nc
+  hashes:
+    binhash: 16cf17d43b35679aba338a4e66e194f3
+    md5: 8996be1f14a51fd6b9b8afcd2f4eaf9d
+work/ocean/INPUT/ocean_wombatlite_airsea_flux.res.nc:
+  fullpath: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583/ocean/ocean_wombatlite_airsea_flux.res.nc
+  hashes:
+    binhash: 3e20f2b5cab64bffaddbb7a52bd0f673
+    md5: b4419bd5f152332d211a0f97c94b6b8f
