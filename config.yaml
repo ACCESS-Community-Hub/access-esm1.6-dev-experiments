@@ -146,7 +146,7 @@ manifest:
 
 
 stacksize: unlimited
-qsub_flags: -W umask=027
+qsub_flags: -W umask=027 -l storage=gdata/p66
 
 
 # Sync options for automatically copying data from ephemeral scratch space to
