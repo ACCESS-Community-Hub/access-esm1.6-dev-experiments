@@ -22,7 +22,7 @@
     grid_type    = 'tripole'
     grid_file    = './INPUT/grid.nc'
     kmt_file     = './INPUT/kmt.nc'
-    kcatbound    = 1
+    kcatbound    = 0
 /
 
 &domain_nml
@@ -51,6 +51,7 @@
     phi_c_slow_mode = 0.05
     rac_rapid_mode = 10.0
     saltmax = 9.6
+    ice_ref_salinity = 4
 /
 
 &dynamics_nml
@@ -61,8 +62,8 @@
     krdg_partic     = 1
     krdg_redist     = 1
     mu_rdg          = 3
-    cosw = 0.96
-    sinw = 0.28
+    cosw            = 0.96
+    sinw            = 0.28
 /
 
 &shortwave_nml
@@ -81,4 +82,5 @@
     formdrag        = .false.
     ustar_min       = 0.0005
     tfrz_option     = 'linear_salt' !is this used ?
+    update_ocn_f    = .true.
 /
