@@ -57,8 +57,8 @@
              ! 1 Carbon only
              ! 2 Carbon and nitrogen
              ! 3 Carbon, nitrogen and phosphorus
-  l_laiFeedbk   = .FALSE.  ! using prognostic LAI
-  l_vcmaxFeedbk = .FALSE.  ! using prognostic Vcmax
+  l_laiFeedbk   = .TRUE.  ! using prognostic LAI
+  l_vcmaxFeedbk = .TRUE.  ! using prognostic Vcmax
 ! filenames for CASA-CNP input files
 ! updated pftlookup file for CABLE3 format
   casafile%cnpbiome='INPUT/pftlookup_cable3.csv'  ! biome specific BGC parameters
