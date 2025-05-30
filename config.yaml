@@ -29,7 +29,7 @@ modules:
   use:
   - /g/data/vk83/prerelease/modules
   load:
-  - access-esm1p6/pr78-39
+  - access-esm1p6/pr78-41
 
 # Model configuration
 model: access-esm1.6
@@ -119,7 +119,6 @@ collate:
   enable: false
 
 restart: /home/599/jxs599/PAYU/restart_04-08_AusPFTs 
-#restart: /g/data/p66/jxs599/ESM16/PAYU/restart398_AusPFTs
 
 # Timing controls
 calendar:
