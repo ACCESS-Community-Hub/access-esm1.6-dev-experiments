@@ -150,7 +150,7 @@ qsub_flags: -W umask=027
 # Sync options for automatically copying data from ephemeral scratch space to
 # longer term storage
 sync:
-  enable: false   # set path below and change to true
+  enable: False   # set path below and change to true
   path:        # Set to location on /g/data or a remote server and path (rsync syntax)
 
 # If a postscript included (such as the automated netcdf conversion), the latest output and restart files will not

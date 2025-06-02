@@ -50,8 +50,8 @@
 ! CASA-CNP flags
   l_luc = .FALSE.
   l_thinforest = .FALSE. 
-  l_casacnp = .TRUE. ! redundant? actually controlled by icycle
-  icycle = 3 ! Controls whether CASA-CNP is run and for which species
+  l_casacnp = .FALSE. ! redundant? actually controlled by icycle
+  icycle = 0 ! Controls whether CASA-CNP is run and for which species
              ! Choices are:
              ! 0 CASA-CNP not run
              ! 1 Carbon only
