@@ -120,7 +120,7 @@ submodels:
 collate:
     enable: false
 
-restart: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart583
+restart: /g/data/tm70/as2285/payu/esm1.6-preind-202504-cice5/restart100
 
 # Timing controls
 calendar:
@@ -158,7 +158,7 @@ storage:
 # longer term storage
 sync:
     enable: True # set path below and change to true
-    path: /g/data/tm70/as2285/esm1.6+cice5+apr # Set to location on /g/data or a remote server and path (rsync syntax)
+    path: /g/data/tm70/as2285/esm1.6+cice5+apr+part2 # Set to location on /g/data or a remote server and path (rsync syntax)
 
 # If a postscript included (such as the automated netcdf conversion), the latest output and restart files will not
 # be automatically synced at the end of a run. To sync the latest output after a postscript has completed,
