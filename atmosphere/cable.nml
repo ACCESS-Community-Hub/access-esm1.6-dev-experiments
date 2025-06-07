@@ -36,6 +36,7 @@
   cable_user%L_REV_CORR = .TRUE.
   snmin = 0.11
   cable_user%SOIL_THERMAL_FIX = .TRUE.
+  cable_user%juggle_field     = .TRUE.
 
 !!--------------Test Switches--------------
   cable_user%l_new_roughness_soil  = .FALSE.   ! for new soil roughness, E.Kowalczyk Mar14
