@@ -27,7 +27,7 @@
                                       ! 'BASIC'
                                       ! 'NONE' 
                                       ! 'zero' (in cable_explicit_driver - what does this do?)
-  cable_user%ssnow_POTEV = 'P-M'      ! Controls method used for soil evaporation
+  cable_user%ssnow_POTEV = ''      ! Controls method used for soil evaporation
                                  ! Choices are:
                                  ! 'P-M' Penman_Monteith, otherwise defaults to 
                                  ! humidity deficit method
