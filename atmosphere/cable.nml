@@ -3,6 +3,7 @@
 !
 !! cable_user flags
 !
+  cable_user%ijuggle   = 'Juggle' 
   cable_user%GS_SWITCH = 'medlyn' ! alternative is 'leuning' - used for ESM1.5
   cable_user%CABLE_RUNTIME_COUPLED = .TRUE. ! controls whether snow initialised if
                                             ! ktau_gl=1
