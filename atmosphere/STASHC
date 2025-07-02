@@ -230,13 +230,14 @@
  &STREQ IMOD= 1, ISEC=3, ITEM=893, IDOM=10, ITIM=3, IUSE=2 /
  &STREQ IMOD= 1, ISEC=8, ITEM=236, IDOM=10, ITIM=3, IUSE=2 /
  &STREQ IMOD= 1, ISEC=8, ITEM=237, IDOM=10, ITIM=3, IUSE=2 /
-##jhan:streq
- ## Monthly - variables on tiles - other #
- #&STREQ IMOD= 1, ISEC=3, ITEM=801, IDOM=10, ITIM=3, IUSE=2 /
- # Daily - variables on tiles - other #
  &STREQ IMOD= 1, ISEC=3, ITEM=801, IDOM=10, ITIM=1, IUSE=1 /
- # jhan:timesseries- variables on tiles - other #
- #&STREQ IMOD= 1, ISEC=3, ITEM=801, IDOM=10, ITIM=6, IUSE=3 /
+##jhan:streq
+# ## Monthly - variables on tiles - other #
+# #&STREQ IMOD= 1, ISEC=3, ITEM=801, IDOM=10, ITIM=3, IUSE=2 /
+# # Daily - variables on tiles - other #
+# &STREQ IMOD= 1, ISEC=3, ITEM=801, IDOM=10, ITIM=1, IUSE=1 /
+# # jhan:timesseries- variables on tiles - other #
+# #&STREQ IMOD= 1, ISEC=3, ITEM=801, IDOM=10, ITIM=6, IUSE=3 /
 
  # Daily - 2D surface variables #
  &STREQ IMOD= 1, ISEC=0, ITEM=23, IDOM=1, ITIM=1, IUSE=1 /
@@ -394,7 +395,7 @@
 # INTV=1,UNT1="DF",IOFF=0,ISAM=1,UNT2="T ",
 # IOPT=1,
 # ISTR=1,IEND=-1,IFRE=1,UNT3="DF",
- /
+# /
 
  &DOMAIN NAME="DIAG", IOPL=5
  PLT=0,
@@ -781,6 +782,10 @@
  IUNT=98,
  /
 
+ &USE NAME="UPI3hrly", LOCN=3
+ IUNT=68,
+ /
+
  &USE NAME="UPJuser", LOCN=3
  IUNT=69,
  /
@@ -800,6 +805,10 @@
  &USE NAME="UPFuser", LOCN=3
  IUNT=65,
  /
+#jhan
+ ##&USE NAME="Upi3hr", LOCN=3
+ ##IUNT=68,
+ ##/
 
  &USE NAME="Upi6hrly", LOCN=3
  IUNT=69,
