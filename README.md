@@ -21,7 +21,7 @@ For example, `MartinDix-test-20250305-3` would refer to the third "test" experim
 
 ### Pushing an experiment to this repository
 To complete the following you need write access to this repository. To get write access, you need to [create an issue](
-https://github.com/ACCESS-Community-Hub/access-esm1.6-dev-experiments/issues/new/choose) and request access.
+https://github.com/ACCESS-Community-Hub/access-esm1.6-dev-experiments/issues/new?template=repository-access-request.md) and request access.
 
 The steps below can be followed to push an experiment to this repository. Note that github ssh keys will need to have previously been set up
 1. Navigate to the experiment's payu control directory
