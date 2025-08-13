@@ -15,6 +15,4 @@ Welcome! Great to hear you'd like to contribute. :)
 
 Lodging this issue will notify an admin to grant you write access. 
 
-Once access is granted, please follow the contribution guidelines in the [`README`](https://github.com/ACCESS-Community-Hub/access-esm1.6-dev-experiments).  
-
-All changes to the `main` branch must be made via pull requests.
+Once access is granted, please follow the contribution guidelines in the [`README`](https://github.com/ACCESS-Community-Hub/access-esm1.6-dev-experiments).
