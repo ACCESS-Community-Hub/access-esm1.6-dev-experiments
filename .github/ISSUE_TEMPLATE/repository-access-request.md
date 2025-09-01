@@ -1,9 +1,12 @@
 ---
 name: Repository access request
 about: Use this template to request write access to this repository.
-title: ''
+title: 'Request write permissions'
 labels: ''
-assignees: ''
+assignees: 
+  - blimlim
+  - ccarouge
+  - chrisb13
 
 ---
 
