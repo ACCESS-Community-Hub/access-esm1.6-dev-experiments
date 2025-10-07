@@ -7,7 +7,7 @@ Each branch in this repository will correspond to a separate experiment.
 ### Branch name conventions
 Branches in this repository use the following naming convention:
 ```
-<GH-user-name>-<dev/test>-<YYYYMMDD>-<counter>
+<GH-user-name>-<dev/test>-<YYYYMMDD>-<number>
 ```
 where:
 - `<GH-user-name>` is the GitHub user name of the person running the experiment
@@ -38,7 +38,7 @@ The steps below can be followed to push an experiment to this repository. Note t
    ```
 4. Push the experiment to this archive, assigning a branch name that matching the conventions:
     ```
-    git push esm1p6_dev_archive <current-branch-name>:<user-name>-<dev/test>-<YYYYMMDD>-<counter>
+    git push esm1p6_dev_archive <current-branch-name>:<user-name>-<dev/test>-<YYYYMMDD>-<number>
     ```
 
 ### Updating an archived experiment
