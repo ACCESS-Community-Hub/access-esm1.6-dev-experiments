@@ -16,7 +16,7 @@
 # Note: if laboratory is relative path, it is relative to shortpath/$USER
 laboratory: access-esm
 
-jobname: Sept-C
+jobname: GPP-12    
 queue: normalsr
 walltime: 2:30:00
 jobfs: 1500MB
@@ -28,9 +28,9 @@ platform:
 # Modules for loading model executables
 modules:
   use:
-      - /g/data/vk83/modules
+      - /g/data/vk83/prerelease/modules
   load:
-      - access-esm1p6/2025.09.002
+      - access-esm1p6/pr148-11
 
 # Model configuration
 model: access-esm1.6
@@ -119,7 +119,7 @@ submodels:
 collate:
     enable: false
 
-restart: /g/data/vk83/prerelease/configurations/inputs/access-esm1p6/modern/pre-industrial/restart/2025.09.26.C
+restart: /g/data/p66/jxs599/ESM16/PAYU/Feat/feat-GPP-13/restart270 
 
 # Timing controls
 calendar:
@@ -137,8 +137,6 @@ runlog: true
 manifest:
   reproduce:
     exe: false
-    input: false
-    restart: false
 
 
 stacksize: unlimited
@@ -151,10 +149,9 @@ payu_minimum_version: 1.1.7
 # Sync options for automatically copying data from ephemeral scratch space to
 # longer term storage
 sync:
-  enable: True
-  restarts: True
-  walltime: 30:00
-  path: /g/data/p73/archive/CMIP7/ACCESS-ESM1-6/spinup/Sept-C
+    enable: False # set path below and change to true
+    restarts: True
+    path: null # Set to location on /g/data or a remote server and path (rsync syntax)
 
 # If a postscript included (such as the automated netcdf conversion), the latest output and restart files will not
 # be automatically synced at the end of a run. To sync the latest output after a postscript has completed,
