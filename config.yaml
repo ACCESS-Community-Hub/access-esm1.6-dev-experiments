@@ -136,9 +136,10 @@ restart_freq: 10YS
 runlog: true
 manifest:
   reproduce:
-    exe: true
-    input: true
-    restart: true
+    exe: false
+    input: false
+    restart: false
+
     
 stacksize: unlimited
 qsub_flags: -W umask=027
