@@ -135,9 +135,9 @@ restart_freq: 10YS
 runlog: true
 manifest:
   reproduce:
-    exe: true
-    input: true
-    restart: true
+    exe: False
+    input: False
+    restart: False
 
 
 stacksize: unlimited
