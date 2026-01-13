@@ -1,6 +1,6 @@
 contact: Srbinovsky, Jhan (O&A, Aspendale)
 email: Jhan.Srbinovsky@csiro.au
-created: '2025-12-23'
+created: '2026-01-13'
 description: |-
   ACCESS-ESM1.5 global coupled model configuration running in co2 concentration driven mode under pre-industrial forcings, as described in Ziehn et al. (2020), https://doi.org/10.1071/ES19035.
   Pre-industrial forcing data including atmospheric co2 concentrations are primarily sourced from UKMO versions of CMIP6 inputs, with additional atmospheric forcings sourced from CMIP5 and land cover data adapted from Lawrence et al. (2012), https://doi.org/10.1175/JCLI-D-11-00256.1.
@@ -26,8 +26,8 @@ license: CC-BY-4.0
 model: ACCESS-ESM1.6
 version: '1.1'
 url: git@github.com:ACCESS-NRI/access-esm1.6-configs.git
-experiment_uuid: 87bd039c-0042-4c91-af94-ccce5659bf7d
-name: Dec25-spinup-Dec25-spinup-87bd039c
+experiment_uuid: 3b28eb70-a6cb-444c-b563-6186f39fea26
+name: Dec25-CN-Dec25-spinup-3b28eb70
 schema_version:  # The version of the schema (string)
 long_description: # Long description of the experiment (string)
 frequency: # The frequency(/ies) included in the experiment (string)
