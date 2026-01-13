@@ -16,7 +16,7 @@
 # Note: if laboratory is relative path, it is relative to shortpath/$USER
 laboratory: access-esm
 
-jobname: Dec25-PI-control
+jobname: Dec25-PI-CN
 queue: normalsr
 walltime: 2:30:00
 jobfs: 1500MB
@@ -152,7 +152,7 @@ sync:
   enable: True
   restarts: True
   walltime: 20:00
-  path: /g/data/p73/archive/CMIP7/ACCESS-ESM1-6/spinup/Dec25-PI-control
+  path: /g/data/p73/archive/CMIP7/ACCESS-ESM1-6/spinup/Dec25-PI-CN
 
 # If a postscript included (such as the automated netcdf conversion), the latest output and restart files will not
 # be automatically synced at the end of a run. To sync the latest output after a postscript has completed,
