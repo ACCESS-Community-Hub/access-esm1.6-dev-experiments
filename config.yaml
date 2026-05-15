@@ -8,15 +8,15 @@
 
 # If submitting to a different project to your default, uncomment line below
 # and replace PROJECT_CODE with appropriate code. This may require setting shortpath
-# project: PROJECT_CODE
+project: xh94
 
 # Force payu to always find, and save, files in this scratch project directory
-# shortpath: /scratch/PROJECT_CODE
+shortpath: /scratch/p66
 
 # Note: if laboratory is relative path, it is relative to shortpath/$USER
 laboratory: access-esm
 
-jobname: historical
+jobname: esm-historical
 queue: normalsr
 walltime: 2:30:00
 jobfs: 15GB
@@ -124,7 +124,8 @@ submodels:
 collate:
     enable: false
 
-restart: /g/data/vk83/prerelease/configurations/inputs/access-esm1p6/modern/historical/restart/2026.02.23
+    #restart: /g/data/vk83/prerelease/configurations/inputs/access-esm1p6/modern/historical/restart/2026.02.23
+restart: /g/data/p66/rml599/historical/restarts/restart199
 
 # Timing controls
 calendar:
