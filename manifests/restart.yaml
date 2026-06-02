@@ -2,6 +2,7 @@ format: yamanifest
 version: 1.0
 ---
 work/atmosphere/restart_dump.astart:
+<<<<<<< setup-esm-flat10-cdr
   fullpath: /g/data/vk83/configurations/inputs/access-esm1p6/modern/flat10-zec/restart/2026.05.27/atmosphere/restart_dump.astart
   hashes:
     binhash: fada49d0f60cdfbe70bf6e56d9028df1
@@ -143,3 +144,146 @@ work/ocean/INPUT/ocean_wombatlite_airsea_flux.res.nc:
   hashes:
     binhash: 45c8b8693454432e81cb73ff996d0259
     md5: 1f76d408e4e796b3bba89554b979d329
+=======
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/atmosphere/restart_dump.astart
+  hashes:
+    binhash: f047ccd1122f1ad8d3886aca41123c33
+    md5: 25b81604414ec649b98ff45bef4b46fd
+work/atmosphere/um.res.yaml:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/atmosphere/um.res.yaml
+  hashes:
+    binhash: 7b5a595b65a865807f228b70c664d7cc
+    md5: 5933e8335992d495b76d5a11721e32ad
+work/coupler/a2i.nc:
+  copy: true
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/coupler/a2i.nc
+  hashes:
+    binhash: 6bcd856f0e42cb936e5db427a71d9a3f
+    md5: 37fe856baee768b32ae839a961f0e3f1
+work/coupler/i2a.nc:
+  copy: true
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/coupler/i2a.nc
+  hashes:
+    binhash: 70c89f5b781d59ed59771d16324f0295
+    md5: a9a4421ca6643460a8f87da2fe0525ec
+work/coupler/o2i.nc:
+  copy: true
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/coupler/o2i.nc
+  hashes:
+    binhash: b440a60e0e1ab75d68c3c1b6db326c27
+    md5: df8696237bb8ec16529b03100ee6f392
+work/ice/RESTART/cice_in.nml:
+  copy: true
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ice/cice_in.nml
+  hashes:
+    binhash: c0365342e7a52f38f6271f59011e6019
+    md5: f27d1348905f57fd090b3add437f7d49
+work/ice/RESTART/ice.restart_file:
+  copy: true
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ice/ice.restart_file
+  hashes:
+    binhash: dc12a02b6b1d19ab3369c1dbd955fffc
+    md5: b71d174fd427acd35490e51b33e65820
+work/ice/RESTART/iced.0300-01-01-00000.nc:
+  copy: true
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ice/iced.0300-01-01-00000.nc
+  hashes:
+    binhash: 701d40bc78d953b9397778ac8941ce41
+    md5: 18917408f0189323d419518dcb1fd13a
+work/ice/RESTART/mice.nc:
+  copy: true
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ice/mice.nc
+  hashes:
+    binhash: c80516ce89671de87c21d4c377bf4423
+    md5: a9bf17badf3387a7e427eca8ece507b8
+work/ocean/INPUT/ocean_age.res.nc:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_age.res.nc
+  hashes:
+    binhash: 182911ef7bfe75caa876d1ac1ea65574
+    md5: 98b9e726930abb9d40770ee7f1b94432
+work/ocean/INPUT/ocean_barotropic.res.nc:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_barotropic.res.nc
+  hashes:
+    binhash: d90b28ea146101ff1d78723896c5f973
+    md5: eb602451d6ccac1826a1cdd56b2ff4a9
+work/ocean/INPUT/ocean_bih_friction.res.nc:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_bih_friction.res.nc
+  hashes:
+    binhash: 5cadc875d884e2153eb2498a05034433
+    md5: fcb3ab7e0b211216b2efe3a1a666f82c
+work/ocean/INPUT/ocean_density.res.nc:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_density.res.nc
+  hashes:
+    binhash: 22fd5dd884e5e179a94da61a8e10d8cb
+    md5: f3de410f19fe150a0a3cbc27193333ad
+work/ocean/INPUT/ocean_frazil.res.nc:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_frazil.res.nc
+  hashes:
+    binhash: e2b84d323aa15ba9eaed608089c6f592
+    md5: 63ed7ff0b4f2d8f200c6a49fb484142f
+work/ocean/INPUT/ocean_lap_friction.res.nc:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_lap_friction.res.nc
+  hashes:
+    binhash: 13abde7b85c95a1a8d9b5f71d40614de
+    md5: d2f76191d70a132680997eb35e1e7817
+work/ocean/INPUT/ocean_neutral.res.nc:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_neutral.res.nc
+  hashes:
+    binhash: 723ea97fa1c8324046c639acd5add00c
+    md5: 824468e1365c49184565f32ae404b094
+work/ocean/INPUT/ocean_pot_temp.res.nc:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_pot_temp.res.nc
+  hashes:
+    binhash: d307cb4fb43a845045a9082f901076a2
+    md5: 1c7d4cbef80273e9c40b43665af46969
+work/ocean/INPUT/ocean_sbc.res.nc:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_sbc.res.nc
+  hashes:
+    binhash: eb908d0dfc2cd67c186c124856f7cfff
+    md5: 2d0522f079272fd892919cf215d51a04
+work/ocean/INPUT/ocean_sigma_transport.res.nc:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_sigma_transport.res.nc
+  hashes:
+    binhash: 930e332a01134fff8080c57174185253
+    md5: 13cedb1ccde6b993fbd12afc326975f1
+work/ocean/INPUT/ocean_solo.res:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_solo.res
+  hashes:
+    binhash: 85fb48e9d69ea3142625b5a9374f8eac
+    md5: 48be072b9b3295ef6ccbdfeb03faafad
+work/ocean/INPUT/ocean_temp_salt.res.nc:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_temp_salt.res.nc
+  hashes:
+    binhash: c909b9f855047e93776687df6c32dc20
+    md5: fcb2720095675d26e767233fb3a603d6
+work/ocean/INPUT/ocean_thickness.res.nc:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_thickness.res.nc
+  hashes:
+    binhash: 84fa94b374a5966f8da66dc291717fd3
+    md5: c17d14197ae9873cc1e283b6e8af4235
+work/ocean/INPUT/ocean_tracer.res:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_tracer.res
+  hashes:
+    binhash: 77aee0ad0cdd7e1364b92184eaa2d2dd
+    md5: 7f21efdf0530bd1abadcc6fc46fc9424
+work/ocean/INPUT/ocean_velocity.res.nc:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_velocity.res.nc
+  hashes:
+    binhash: 0a0c0d021bede85637ff263b7a362131
+    md5: ae214b4d7a3c2996f343c3e4e19920df
+work/ocean/INPUT/ocean_velocity_advection.res.nc:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_velocity_advection.res.nc
+  hashes:
+    binhash: a73ecf62f0fbfa58a35f96f9ab6d8f9a
+    md5: 5d9c47428359bd858235bb14428c2639
+work/ocean/INPUT/ocean_wombatlite.res.nc:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_wombatlite.res.nc
+  hashes:
+    binhash: 8d535491981d3bcba85be526eb3e10b9
+    md5: eb7dfa25df2c93b554ed48ec433fe011
+work/ocean/INPUT/ocean_wombatlite_airsea_flux.res.nc:
+  fullpath: /scratch/p66/jxs599/access-esm/archive/esm-flat10-dev-flat10-29-04-26-4d052f54/restart098/ocean/ocean_wombatlite_airsea_flux.res.nc
+  hashes:
+    binhash: 1061dcc90a77043e1c6a522c05f7c8c2
+    md5: d9ce1fbc11ad8d7123fc618ac0b0d0f0
+>>>>>>> esm-flat10-cdr-2026-06-02

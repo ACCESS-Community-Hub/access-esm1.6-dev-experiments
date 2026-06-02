@@ -16,7 +16,11 @@
 # Note: if laboratory is relative path, it is relative to shortpath/$USER
 laboratory: access-esm
 
+<<<<<<< setup-esm-flat10-cdr
 jobname: esm-flat10-cdr
+=======
+jobname: esm-flat10 
+>>>>>>> esm-flat10-cdr-2026-06-02
 queue: normalsr
 walltime: 2:30:00
 jobfs: 15GB
@@ -132,7 +136,7 @@ calendar:
 runspersub: 1
 
 # Misc
-restart_freq: 10YS
+restart_freq: 1YS
 
 runlog: true
 manifest:
@@ -151,9 +155,14 @@ payu_minimum_version: 1.3.0
 # Sync options for automatically copying data from ephemeral scratch space to
 # longer term storage
 sync:
-    enable: False # set path below and change to true
+    enable: True
     restarts: True
+<<<<<<< setup-esm-flat10-cdr
     base_path: null # Set to location on /g/data (e.g., /g/data/$PROJECT/$USER/)
+=======
+    walltime: 20:00
+    path: /g/data/p73/archive/CMIP7/ACCESS-ESM1-6/production/esm-flat10
+>>>>>>> esm-flat10-cdr-2026-06-02
 
 # If a postscript included (such as the automated netcdf conversion), the latest output and restart files will not
 # be automatically synced at the end of a run. To sync the latest output after a postscript has completed,

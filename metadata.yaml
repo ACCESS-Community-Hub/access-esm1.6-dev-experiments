@@ -1,6 +1,6 @@
-contact: Add your name here
-email: Add your email address here
-created: Add the date you started the experiment here (YYYY-MM-DD)
+contact: Srbinovsky, Jhan (O&A, Aspendale)
+email: Jhan.Srbinovsky@csiro.au
+created: '2026-04-29'
 description: |-
   ACCESS-ESM1.6 global coupled model configuration running with an interactive carbon cycle under pre-industrial forcings, with additional CO2 emissions which decline from +10PgC/year to -10PgC/year over 100 years, remain constant at -10PgC/year for 100 years, and then swap to zero emissions for the remaining experiment duration. Pre-industrial forcing data are primarily sourced from the input4MIPs CMIP7 datasets.
 notes: |-
@@ -10,18 +10,31 @@ notes: |-
     (3) Follow the guidelines for acknowledging ACCESS-NRI (https://www.access-nri.org.au/resources/acknowledging-us/) and also acknowledge the ongoing science developments led by CSIRO, by including a statement such as:
         "This research used the ACCESS-ESM1.6 model infrastructure provided by ACCESS-NRI, which is enabled by the Australian Government’s National Collaborative Research Infrastructure Strategy (NCRIS). Science development of ACCESS-ESM1.6 was led by CSIRO with support from the Australian Government's National Environmental Science Program Climate Systems Hub."
 keywords:
-  - global
-  - access-esm1.6
+- global
+- access-esm1.6
 realm:
-  - atmos
-  - land
-  - ocean
-  - ocnBgchem
-  - seaIce
+- atmos
+- land
+- ocean
+- ocnBgchem
+- seaIce
 nominal_resolution: 100 km
 reference: https://doi.org/10.5281/zenodo.17490072
 license: CC-BY-4.0
 model: ACCESS-ESM1.6
+<<<<<<< setup-esm-flat10-cdr
 version: '1.0'
 url: https://github.com/ACCESS-NRI/access-esm1.6-configs.git
 parent_experiment: 4d052f54-ddc0-4cb6-9fbb-c89054462d72
+=======
+version: '1.1'
+url: https://github.com/ACCESS-NRI/access-esm1.6-configs
+experiment_uuid: 4d052f54-ddc0-4cb6-9fbb-c89054462d72
+name: esm-flat10-dev-flat10-29-04-26-4d052f54
+schema_version: 1-0-3
+long_description: __REPLACE_ME__  # Long description of the experiment (string)
+# frequency: The frequency(/ies) included in the experiment (array of strings)
+# variable: The variable(s) included in the experiment (array of strings)
+# parent_experiment: experiment_uuid for parent experiment if appropriate (string)
+# related_experiments: experiment_uuids for any related experiment(s) (array of strings)
+>>>>>>> esm-flat10-cdr-2026-06-02
