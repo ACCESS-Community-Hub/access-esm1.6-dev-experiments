@@ -132,7 +132,7 @@ calendar:
 runspersub: 1
 
 # Misc
-restart_freq: 10YS
+restart_freq: 1YS
 
 runlog: true
 manifest:
@@ -151,7 +151,7 @@ payu_minimum_version: 1.3.0
 # Sync options for automatically copying data from ephemeral scratch space to
 # longer term storage
 sync:
-    enable: False # set path below and change to true
+    enable: False
     restarts: True
     base_path: null # Set to location on /g/data (e.g., /g/data/$PROJECT/$USER/)
 
